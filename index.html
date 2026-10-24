@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MPI Bahasa Inggris VII — Write Negative Sentences</title>
+<style>
+:root{--blue:#1769d2;--navy:#15345e;--pale:#eef6ff;--line:#c9defa;--green:#12834b;--red:#d43e4c;--ink:#15243b;--muted:#607087}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+button{font:inherit;cursor:pointer;border:0;border-radius:12px;padding:11px 16px;font-weight:700}button:focus-visible{outline:3px solid #ffbf47;outline-offset:3px}
+header{border-bottom:1px solid var(--line);padding:15px max(18px,calc((100% - 1050px)/2));display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;background:white}
+.logo{color:var(--blue);font-weight:900;letter-spacing:.08em}.tag{font-size:.85rem;color:var(--muted);background:var(--pale);padding:6px 11px;border-radius:99px}
+main{max-width:1050px;margin:0 auto;padding:24px 18px 45px}.screen{display:none}.screen.active{display:block}
+.cover{min-height:65vh;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:25px}.cover h1{font-size:clamp(2.2rem,6vw,4.3rem);line-height:1.05;color:var(--navy);margin:12px 0}.cover h2{font-size:1.2rem;color:var(--blue)}.cover p{color:var(--muted);max-width:620px}.eyebrow{text-transform:uppercase;color:var(--blue);letter-spacing:.14em;font-weight:800;font-size:.78rem}
+.art{background:var(--pale);border:1px solid var(--line);border-radius:28px;min-height:240px;display:grid;place-items:center;font-size:clamp(5rem,12vw,9rem)}
+.btn{background:var(--blue);color:white}.btn.secondary{background:var(--pale);color:var(--navy);border:1px solid var(--line)}.btn:disabled{opacity:.45;cursor:not-allowed}
+.panel{border:1px solid var(--line);border-radius:22px;padding:clamp(18px,3vw,30px);box-shadow:0 8px 26px #173b7010;background:white}.panel h2{margin:0 0 8px;color:var(--navy)}.sub{color:var(--muted);margin-top:0}.goal{background:#f7fbff;border-left:4px solid var(--blue);padding:14px 16px;border-radius:8px;margin:18px 0}
+.menu-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:20px 0}.menu-grid button{background:var(--pale);color:var(--blue);border:1px solid var(--line);padding:15px 5px}
+.quiztop{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.num{display:inline-grid;place-items:center;width:42px;height:42px;background:var(--blue);color:white;border-radius:50%;font-size:1.2rem;font-weight:900;margin-right:8px}
+.question{font-size:clamp(1.15rem,3vw,1.55rem);font-weight:800;margin:22px 0}.answers{display:grid;gap:10px;max-width:680px}.answer{background:white;border:1px solid var(--line);text-align:left;color:var(--ink);display:flex;gap:12px;align-items:center}.letter{width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:var(--pale);color:var(--blue);flex-shrink:0}.answer:hover{background:#f7fbff;border-color:var(--blue)}.answer.correct{border:2px solid var(--green);background:#effcf4}.answer.wrong{border:2px solid var(--red);background:#fff2f3}
+.feedback{display:none;margin:18px 0;padding:17px;border-radius:16px;text-align:center}.feedback.show{display:block}.feedback.good{background:#effcf4;border:1px solid #b8e7c9;color:#075b31}.feedback.bad{background:#fff2f3;border:1px solid #f4c1c5;color:#9d1726}.emoji{font-size:3.2rem;display:block;line-height:1.2}.applause{font-size:2.8rem;display:block;animation:pop .5s ease-in-out 2}@keyframes pop{50%{transform:scale(1.2)}}.feedback strong{font-size:1.25rem;display:block;margin:5px 0}
+.navrow{display:flex;justify-content:space-between;gap:10px;margin-top:22px;flex-wrap:wrap}.scorecard{text-align:center;padding:25px}.score{font-size:3rem;color:var(--blue);font-weight:900}.small{font-size:.9rem;color:var(--muted)}footer{text-align:center;padding:20px;color:var(--muted);border-top:1px solid var(--line)}
+@media(max-width:680px){.cover{grid-template-columns:1fr;min-height:auto}.art{min-height:140px}.menu-grid{grid-template-columns:repeat(2,1fr)}header{padding:13px 18px}.answers{max-width:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="logo">MPI • ENGLISH VII</div><div class="tag">SMPN 12 Kolaka Utara · Fase D</div></header>
+<main>
+<section id="cover" class="screen active">
+ <div class="cover"><div><div class="eyebrow">Media Pembelajaran Interaktif</div><h1>Write Negative Sentences</h1><h2>Bahasa Inggris · Kelas VII</h2><p>Belajar mengubah kalimat positif menjadi kalimat negatif melalui 10 soal interaktif. Pilih jawaban, lihat umpan balik, dan tingkatkan kemampuanmu!</p><div class="goal"><b>Tujuan Pembelajaran</b><br>Peserta didik mampu mengidentifikasi pola dan menulis kalimat negatif sederhana menggunakan <i>am/is/are not</i>, <i>do not</i>, dan <i>does not</i> dengan tepat.</div><p><b>Disusun oleh: Indar Arfah, S.Pd.</b></p><button class="btn" onclick="showScreen('instructions')">Mulai belajar →</button></div><div class="art" aria-hidden="true">📘✨</div></div>
+</section>
+<section id="instructions" class="screen"><div class="panel"><div class="eyebrow">Sebelum mulai</div><h2>Petunjuk penggunaan</h2><ol><li>Baca kalimat positif pada setiap soal.</li><li>Pilih satu jawaban yang paling tepat.</li><li>Jawaban benar mendapat visual tepuk tangan dan apresiasi.</li><li>Jawaban salah mendapat emoji sedih dan ajakan mencoba lagi.</li><li>Selesaikan 10 soal untuk melihat skor akhir.</li></ol><div class="goal"><b>Ingat rumus:</b><br>Subject + am/is/are + not<br>Subject + do/does + not + verb dasar (V1)</div><button class="btn" onclick="showScreen('menu')">Lihat menu soal →</button></div></section>
+<section id="menu" class="screen"><div class="panel"><div class="eyebrow">Pilih aktivitas</div><h2>Daftar 10 Soal</h2><p class="sub">Pilih nomor soal atau kerjakan secara berurutan.</p><div class="menu-grid" id="menuGrid"></div><button class="btn secondary" onclick="showScreen('instructions')">← Petunjuk</button></div></section>
+<section id="quizScreen" class="screen"><div class="panel"><div class="quiztop"><div><span class="num" id="qNum">1</span><b>Soal <span id="qCount">1</span> dari 10</b></div><button class="btn secondary" onclick="showScreen('menu')">☰ Menu</button></div><div class="question" id="questionText"></div><div class="answers" id="answers"></div><div class="feedback" id="feedback" aria-live="polite"></div><div class="navrow"><button class="btn secondary" id="prevBtn" onclick="go(-1)">← Sebelumnya</button><button class="btn" id="nextBtn" onclick="go(1)" disabled>Berikutnya →</button></div></div></section>
+<section id="result" class="screen"><div class="panel scorecard"><div class="eyebrow">Selesai!</div><h2>Hasil Belajarmu</h2><div class="score"><span id="score">0</span>/10</div><div id="resultEmoji" style="font-size:3.4rem">🌟</div><p id="resultText"></p><p class="small">Skor dihitung dari jawaban pertama pada setiap soal.</p><button class="btn" onclick="restart()">Ulangi semua soal ↻</button> <button class="btn secondary" onclick="showScreen('menu')">Kembali ke menu</button></div></section>
+</main>
+<footer>MPI Bahasa Inggris Kelas VII · Write Negative Sentences · Indar Arfah, S.Pd.</footer>
+<script>
+const questions=[
+{q:'She is a student.',opts:['She is not a student.','She are not a student.','She not is a student.','She does not a student.'],a:0,why:'Gunakan is not untuk subjek she.'},
+{q:'They play football.',opts:["They doesn’t play football.",'They do not play football.','They are not play football.','They not play football.'],a:1,why:'Subjek they menggunakan do not + verb dasar.'},
+{q:'He is at home.',opts:['He does not at home.','He are not at home.','He is not at home.','He not is at home.'],a:2,why:'Gunakan is not untuk subjek he.'},
+{q:'We have a car.',opts:["We doesn’t have a car.",'We are not have a car.','We does not have a car.','We do not have a car.'],a:3,why:'Subjek we menggunakan do not + verb dasar.'},
+{q:'It is a beautiful day.',opts:['It is not a beautiful day.','It are not a beautiful day.','It does not a beautiful day.','It not is a beautiful day.'],a:0,why:'Kalimat menggunakan to be is, jadi tambahkan not setelah is.'},
+{q:'I like pizza.',opts:["I doesn’t like pizza.",'I do not like pizza.','I am not like pizza.','I does not like pizza.'],a:1,why:'Subjek I menggunakan do not + verb dasar.'},
+{q:'My brother goes to school.',opts:['My brother do not goes to school.','My brother is not go to school.','My brother does not go to school.','My brother does not goes to school.'],a:2,why:'My brother = he; gunakan does not dan verb dasar go.'},
+{q:'They are tired.',opts:['They do not tired.','They is not tired.','They not are tired.','They are not tired.'],a:3,why:'Gunakan are not untuk subjek they.'},
+{q:'She watches TV.',opts:['She does not watch TV.','She do not watches TV.','She is not watch TV.','She does not watches TV.'],a:0,why:'Setelah does not, kata kerja kembali ke bentuk dasar watch.'},
+{q:'We are friends.',opts:['We does not friends.','We are not friends.','We do not friends.','We is not friends.'],a:1,why:'Gunakan are not untuk subjek we.'}
+];
+let current=0,answers=Array(questions.length).fill(null),firstScore=Array(questions.length).fill(null);
+const $=id=>document.getElementById(id);
+function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));$(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});if(id==='quizScreen')renderQuestion();if(id==='menu')renderMenu()}
+function renderMenu(){$('menuGrid').innerHTML=questions.map((q,i)=>`<button onclick="openQuestion(${i})">Soal ${i+1}${answers[i]!==null?' ✓':''}</button>`).join('')}
+function openQuestion(i){current=i;showScreen('quizScreen')}
+function renderQuestion(){const q=questions[current];$('qNum').textContent=current+1;$('qCount').textContent=current+1;$('questionText').textContent='Pilih kalimat negatif yang benar dari: “'+q.q+'”';$('answers').innerHTML=q.opts.map((o,i)=>`<button class="answer ${answers[current]!==null&&i===q.a?'correct':''} ${answers[current]===i&&i!==q.a?'wrong':''}" ${answers[current]!==null?'disabled':''} onclick="choose(${i})"><span class="letter">${String.fromCharCode(65+i)}</span><span>${o}</span></button>`).join('');const fb=$('feedback');fb.className='feedback';fb.innerHTML='';if(answers[current]!==null){const ok=answers[current]===q.a;fb.classList.add('show',ok?'good':'bad');fb.innerHTML=ok?'<span class="applause">👏🏻👏🏼👏🏽</span><strong>Hebat! Jawaban benar!</strong>🎉 Tepuk tangan untuk usahamu!<br>'+q.why:'<span class="emoji">😢</span><strong>Belum tepat. Jangan menyerah!</strong>💗 Ayo pelajari lagi rumusnya.<br>'+q.why}$('prevBtn').disabled=current===0;$('nextBtn').disabled=answers[current]===null;$('nextBtn').textContent=current===questions.length-1?'Lihat hasil →':'Berikutnya →'}
+function choose(i){if(answers[current]!==null)return;answers[current]=i;firstScore[current]=i===questions[current].a?1:0;renderQuestion()}
+function go(dir){if(dir<0){current=Math.max(0,current+dir);renderQuestion();return}if(current===questions.length-1){const total=firstScore.reduce((s,v)=>s+(v||0),0);$('score').textContent=total;$('resultEmoji').textContent=total>=8?'🏆':total>=5?'🌟':'💪';$('resultText').textContent=total>=8?'Luar biasa! Kamu sudah memahami kalimat negatif dengan baik.':total>=5?'Bagus! Pelajari kembali soal yang belum tepat dan terus berlatih.':'Tetap semangat! Baca kembali rumus dan contoh, lalu coba lagi.';showScreen('result')}else{current++;renderQuestion()}}
+function restart(){current=0;answers=Array(questions.length).fill(null);firstScore=Array(questions.length).fill(null);showScreen('menu')}
+renderMenu();
+</script>
+</body></html>
